@@ -2,7 +2,7 @@
 A simple python code to extract card images from ygoprodeck api.
 
 ## Installation
-You can download the `YGO-API-Image-extractor.py` file directly by clicking the link below:
+You can download the `ygo_api_image-extractor.py` file directly by clicking the link below:
 
 [Download YGO-API-Image-extractor.py](https://github.com/dedoZvezdi/YGO-API-Image-extractor/releases/download/Update/YGO-API-Image-extractor.py)
 
