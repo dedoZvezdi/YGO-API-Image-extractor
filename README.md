@@ -1,31 +1,85 @@
-## Description
-A simple python code to extract card images from ygoprodeck api.
+# Yu-Gi-Oh! Card Image Downloader 
 
-## Installation
-You can download the `ygo_api_image-extractor.py` file directly by clicking the link below:
 
-[Download ygo_api_image-extractor.py](https://github.com/dedoZvezdi/ygo_api_image-extractor/releases/download/Update/ygo_api_image-extractor.py)
+## 📦 Requirements
+- **Python 3.7+**
+- Required Python libraries:
+  ```bash
+  pip install requests pillow tkinter
+  ```
 
-## Copyright notice and license
+*Note: `tkinter` usually comes with Python installation*
 
-MIT License
+  ---
 
-Copyright (c) 2024 Svetlin Ivanov
+## 🚀 Installation
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Download the files:
+   ```bash
+    git clone https://github.com/dedoZvezdi/ygo-card-downloader.git
+    cd ygo-card-downloader
+   ```
+*(or manually install the packages listed above)*
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 🖥️ How to Run
+
+```bash
+python ygo_gui.py
+```
+
+---
+
+## 🔧 Full Dependency List
+
+| Library     | Purpose                 | Version     |
+|-------------|-------------------------|-------------|
+| `requests`  | API communication       | ≥2.26.0     |
+| `Pillow`    | Image processing        | ≥9.0.0      |
+| `tkinter`   | GUI interface           | Built-in    |
+| `threading` | Background downloads    | Built-in    |
+| `pathlib`   | File path handling      | Built-in    |
+
+---
+
+## ✨ Features
+
+- **Multiple download options:**
+  - Small/Normal/Cropped image sizes
+  - Custom resizing
+  - Filename formats (Card Names or IDs)
+
+- **Smart downloading:**
+  - Auto-skip existing files
+  - Progress tracking
+  - Cancellable downloads
+
+---
+
+## 📁 File Structure
+
+```
+.
+├── ygo_core.py       # Core logic (API calls, image processing)
+├── ygo_gui.py        # Graphical interface
+└── README.md         # Documentation file
+```
+
+---
+
+## ⚠️ Troubleshooting
+
+If you encounter errors:
+
+1. **Missing libraries:**
+    ```bash
+    pip install --upgrade requests pillow
+    ```
+2. **Tkinter issues (Linux users):**
+   ```bash
+   sudo apt-get install python3-tk
+   ```
+3. **API errors:**
+   - Check your internet connection
+   - Verify [YGOPRODeck API](https://status.ygoprodeck.com/status/ygoprodeck) status
